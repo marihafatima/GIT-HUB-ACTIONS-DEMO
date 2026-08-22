@@ -1,0 +1,18 @@
+name: My First Workflow
+
+on:
+  push:
+
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Say Hello
+        run: echo "Hello from GitHub Actions!"
+
+      - name: Show Linux version
+        run: uname -a
+
+      - name: Show files
+        run: ls -la
